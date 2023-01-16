@@ -11,7 +11,7 @@ MAINTAINER limingqi <limingqi_420@163.com>
 WORKDIR /usr/local/forum
 ARG JAR_FILE=forum-starter/target/forum-java.jar
 COPY ${JAR_FILE} app.jar
-COPY forum-starter/src/main/resources/config/ config/
+COPY forum-starter/src/main/resources/ config/
 EXPOSE 8080
 # 运行jar包
 RUN bash -c 'touch app.jar'
